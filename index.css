@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body{
+ font-family: Arial, Helvetica, sans-serif;
+ background-image: url("/img/bg3.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.heading h1{
+   color: aqua;
+   text-align: center;
+   font-size: 3rem;
+
+}
+.form_container {
+    background-color: aliceblue;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 0 75px -10px #00000099;
+    overflow-y: auto;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5;
+    flex-direction: column;
+}
+form{
+  padding: 1.5rem;
+}
+.form_group{
+  margin-top: 1rem;
+
+}
+.form_group input{
+  display: block;
+  width: 95%;
+  padding: 5px;
+  height: 2rem;
+  border:1px solid rgb(53, 146, 204);
+  border-radius: 5px;
+  outline: none;
+}
+
+.btn {
+  background-color: rgb(53, 146, 204);
+  color: #000;
+  border:  none;
+}
+
+.form_groups :hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: darkblue;
+}
+
+.content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 1rem;
+}
+/* 
+.content ul :nth-child(3){
+  margin-left: -1rem;
+
+} */
+.content ul li {
+  margin-left: -1rem;
+  padding: 1rem;
+}
+
+/* SCROLL CSS */
+.container {
+  margin-top: 1rem;
+  height: 85vh;
+}
+
+:is(.form_container)::-webkit-scrollbar{
+  width: 100%;
+}
+
+.error_message {
+  background-color: rgb(245, 182, 182);
+  display: block;
+  margin: 1rem auto;
+  width: 90%;
+  color: #fff;
+  font-size: 500;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* media queries */
+@media screen and (max-width: 560px) {
+  .form_container {
+      width: 90%;
+    }
+}
+
+.showpass {
+  background-color: rgb(53, 146, 204);
+  color: #fff;
+  padding: 3px;
+  margin-top: 5px;
+  width: 12%;
+  border-radius: 2px;
+}
+
+.pwd {
+  display: block;
+}
